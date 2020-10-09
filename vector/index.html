@@ -1,0 +1,39 @@
+<!DOCTUPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Векторы</title>
+        <link href="CSS\style.css" rel="stylesheet">       
+    </head>
+    <body >
+        <div>
+            <p>Введите координаты векторов</p>
+
+        <br >
+            <p class = "red">
+                Вектор a:<input type = "text" placeholder="X1" value = "" id = "x01">
+                         <input type = "text" placeholder="Y1" value = "" id = "y01"> 
+            </p>
+
+        <br>
+            <p class = "blue">
+                Вектор b:<input type = "text" placeholder = "X2" value = "" id = "x02">
+                         <input type = "text" placeholder = "Y2" value = "" id = "y02">
+            </p>
+        <br>
+        <br>
+            <button onclick = "plus()">Сумма</button>
+            <button onclick = "minus()">Разность</button>
+            <button onclick = "mult()">Скалярное произведение</button>
+        <br>
+            <div>
+                <p>
+                Ответ = <span id="plus"></span> ; <span id="minus"></span> ; <span id="mult"></span>
+                </p>
+            </div>
+
+        </div>
+        <canvas id="canvas" width="1600" height="1000" ></canvas>
+        <script src="Js\main.js"></script>
+    </body>
+</html>
