@@ -34,6 +34,21 @@ class MatrixCalculator extends RealCalculator {
         }
         return new Matrix (values);
     }
+
+    zero(length , elem) {
+        const calc = this.get(elem);
+        const values = [];
+        for (let i = 0; i < length; i++) {
+            values.push([]);
+            for (let j = 0; j < length; j++) {
+                values[i][j] = this.type(calc, elem, 'zero');
+            }
+        }
+        return new Matrix (values);
+    }
+
+
+
      
 
 

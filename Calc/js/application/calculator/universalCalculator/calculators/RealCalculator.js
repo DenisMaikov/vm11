@@ -1,4 +1,4 @@
-class RealCalculator{
+class RealCalculator {
     add(a, b) {
         return a+b;
     }
