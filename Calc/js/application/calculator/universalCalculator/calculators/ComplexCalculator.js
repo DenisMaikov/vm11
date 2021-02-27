@@ -28,6 +28,13 @@ class ComplexCalculator extends RealCalculator {
         return new Complex(re, im);     
     }
 
+    prod(a, p) {
+        return new Complex(
+            super.mult(a.re, p),
+            super.mult(a.im, p)
+        );
+    }
+
     pow (a, n) {
         let newComplex = this.one();
         for (let i = 0; i < n; i++){
