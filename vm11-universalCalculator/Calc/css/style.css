@@ -1,0 +1,92 @@
+body{
+    align-content: center;
+    background-color: rgb(235, 245, 250);
+    margin:0;
+    padding: 15px;
+}
+.hide {
+    display: none;
+}
+#menu {
+    position: absolute;
+    top: 90px;
+    left: 35px;
+    padding: 9px;
+    z-index: 2;
+    background-color: rgb(235, 245, 250);
+}
+canvas {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    z-index: 1;
+}
+.visible {
+    position: absolute;
+    display: block;
+    left: 35;
+    z-index: 2;
+    opacity: 0.75;
+    background-color: rgb(155, 210, 220);
+    border-radius: 10px;
+    width: 560px;
+    padding: 5px;
+}
+.invisible {
+    display: none;
+}
+#calculator {
+    position: absolute;
+    top: 130px;
+    left: 175px;
+    padding: 30px;
+    background-color: white;
+}
+#inputCalc {
+    width: 253px;
+    height: 60px;
+    text-align: right;
+    border: none;
+    font-size: 20px;    
+    margin-bottom: 3px;
+}
+input {
+    margin: 5px;
+}
+button {
+    outline: none;
+    background-color: white;
+    border: none;
+    padding: 3px;
+    margin: 5px;
+}
+#showGraph2D, #showCalculator {
+    width: 200px;
+    height: 45px;
+}
+#showGraph2D:hover, #showCalculator:hover {
+    background-color: rgb(255, 251, 213);
+}
+.operand, .equal, .number {
+    width: 60px;
+    height: 45px;
+    margin: 0px;
+    margin-bottom: 3px;
+    font-size: 20px;
+}
+.operand:hover,
+.equal:hover,
+.number:hover{
+    background-color: rgb(255, 251, 213);
+    border-radius: 30px;
+}
+.operand {
+    color: rgb(121, 0, 202);
+}
+.equal {
+    width: 253px;
+    color: rgb(255, 145, 0);
+}
+.clear {
+    color: orange;
+}
